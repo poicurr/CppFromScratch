@@ -1,0 +1,4 @@
+Checks: '-*,bugprone-*,clang-analyzer-*,performance-*'
+WarningsAsErrors: ''
+HeaderFilterRegex: '.*CppFromScratch.*'
+FormatStyle: file

@@ -19,8 +19,14 @@ add_executable(LinkedListTests LinkedListTests.cpp)
 target_link_libraries(LinkedListTests PRIVATE
   CppFromScratch::CppFromScratch CppFromScratchWarnings
   Catch2::Catch2WithMain)
-
 cppfs_stage_asan_runtime(LinkedListTests)
+
+add_executable(StackTests StackTests.cpp)
+target_link_libraries(StackTests PRIVATE
+  CppFromScratch::CppFromScratch CppFromScratchWarnings
+  Catch2::Catch2WithMain)
+cppfs_stage_asan_runtime(StackTests)
 
 include(Catch)
 catch_discover_tests(LinkedListTests DISCOVERY_MODE PRE_TEST)
+catch_discover_tests(StackTests DISCOVERY_MODE PRE_TEST)

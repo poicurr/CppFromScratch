@@ -60,13 +60,6 @@ else()
     -Wall -Wextra -Wpedantic -Wconversion -Wshadow)
 endif()
 
-# 1. LinkedList
-add_executable(LinkedListExample examples/LinkedListExample.cpp)
-target_link_libraries(LinkedListExample PRIVATE CppFromScratch::CppFromScratch CppFromScratchWarnings)
-cppfs_stage_asan_runtime(LinkedListExample)
-
-# 2. 
-
 if(BUILD_TESTING)
   add_subdirectory(tests)
 endif()

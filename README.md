@@ -52,7 +52,7 @@ ctest --preset tsan
 ## Exercise list
 
 - [x] `LinkedList<T>` — Doubly linked list
-- [ ] `Stack<T>` — LIFO
+- [x] `Stack<T>` — LIFO
 - [ ] `Queue<T>` — FIFO
 - [ ] `DynamicArray<T>` — Growable array
 - [ ] `RingBuffer<T>` — Circular indexing

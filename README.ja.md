@@ -54,7 +54,7 @@ ctest --preset tsan
 ## 課題リスト
 
 - [x] `LinkedList<T>` — 双方向連結リスト
-- [ ] `Stack<T>` — LIFO
+- [x] `Stack<T>` — LIFO
 - [ ] `Queue<T>` — FIFO
 - [ ] `DynamicArray<T>` — 動的配列
 - [ ] `RingBuffer<T>` — 循環バッファ

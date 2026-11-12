@@ -27,6 +27,13 @@ target_link_libraries(StackTests PRIVATE
   Catch2::Catch2WithMain)
 cppfs_stage_asan_runtime(StackTests)
 
+add_executable(QueueTests QueueTests.cpp)
+target_link_libraries(QueueTests PRIVATE
+  CppFromScratch::CppFromScratch CppFromScratchWarnings
+  Catch2::Catch2WithMain)
+cppfs_stage_asan_runtime(QueueTests)
+
 include(Catch)
 catch_discover_tests(LinkedListTests DISCOVERY_MODE PRE_TEST)
 catch_discover_tests(StackTests DISCOVERY_MODE PRE_TEST)
+catch_discover_tests(QueueTests DISCOVERY_MODE PRE_TEST)

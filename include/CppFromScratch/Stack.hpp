@@ -7,20 +7,20 @@
 template <typename T>
 class Stack {
 public:
-  explicit Stack(size_t size)
-      : m_position(0u), m_size(size), m_allocator(),
-        m_data(m_allocator.allocate(size)) {}
+  explicit Stack(size_t capacity)
+      : m_position(0u), m_capacity(capacity), m_allocator(),
+        m_data(m_allocator.allocate(capacity)) {}
 
   ~Stack() {
     std::destroy_n(m_data, m_position);
-    m_allocator.deallocate(m_data, m_size);
+    m_allocator.deallocate(m_data, m_capacity);
   }
 
   Stack(const Stack &) = delete;
   Stack &operator=(const Stack &) = delete;
 
   void push(T value) {
-    if (m_position >= m_size)
+    if (m_position >= m_capacity)
       throw std::overflow_error("stack overflow");
 
     std::construct_at(m_data + m_position, value);
@@ -39,7 +39,7 @@ public:
 
 private:
   size_t m_position;
-  size_t m_size;
+  size_t m_capacity;
   std::allocator<T> m_allocator;
   T *m_data;
 };

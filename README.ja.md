@@ -55,7 +55,7 @@ ctest --preset tsan
 
 - [x] `LinkedList<T>` — 双方向連結リスト
 - [x] `Stack<T>` — LIFO
-- [ ] `Queue<T>` — FIFO
+- [x] `Queue<T>` — FIFO
 - [ ] `DynamicArray<T>` — 動的配列
 - [ ] `RingBuffer<T>` — 循環バッファ
 - [ ] `UniquePtr<T>` — RAIIと排他的所有権
@@ -76,7 +76,7 @@ ctest --preset tsan
 
 ## 課題の追加
 
-`include/CppFromScratch/` にヘッダーを作り、`tests/` にテストを追加して `tests/CMakeLists.txt` へ登録します。実行例を追加する場合は `examples/` とルート `CMakeLists.txt` を使います。インクルードは標準ライブラリを先、プロジェクトヘッダーを後とし、間に空行を入れます。
+`include/CppFromScratch/` にヘッダーを作り、`tests/` にテストを追加して `tests/CMakeLists.txt` へ登録します。
 
 CIおよび旧Presetのエイリアスは含めません。
 

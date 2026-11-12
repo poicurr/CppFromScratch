@@ -53,7 +53,7 @@ ctest --preset tsan
 
 - [x] `LinkedList<T>` — Doubly linked list
 - [x] `Stack<T>` — LIFO
-- [ ] `Queue<T>` — FIFO
+- [x] `Queue<T>` — FIFO
 - [ ] `DynamicArray<T>` — Growable array
 - [ ] `RingBuffer<T>` — Circular indexing
 - [ ] `UniquePtr<T>` — Exclusive ownership and RAII
@@ -74,7 +74,7 @@ ctest --preset tsan
 
 ## Add an exercise
 
-Implement a header under `include/CppFromScratch/`, add test cases under `tests/`, and update `tests/CMakeLists.txt`. For standalone examples, add a source under `examples/` and a target in the root `CMakeLists.txt`. Use std/system `#include`s before project headers, separated by an empty line.
+Implement a header under `include/CppFromScratch/`, add test cases under `tests/`, and update `tests/CMakeLists.txt`.
 
 No CI or old presets are included.
 

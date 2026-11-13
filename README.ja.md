@@ -56,7 +56,7 @@ ctest --preset tsan
 - [x] `LinkedList<T>` — 双方向連結リスト
 - [x] `Stack<T>` — LIFO
 - [x] `Queue<T>` — FIFO
-- [ ] `DynamicArray<T>` — 動的配列
+- [x] `DynamicArray<T>` — 動的配列
 - [ ] `RingBuffer<T>` — 循環バッファ
 - [ ] `UniquePtr<T>` — RAIIと排他的所有権
 - [ ] `BinarySearchTree<T>` — 二分探索木

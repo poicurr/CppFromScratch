@@ -33,7 +33,14 @@ target_link_libraries(QueueTests PRIVATE
   Catch2::Catch2WithMain)
 cppfs_stage_asan_runtime(QueueTests)
 
+add_executable(DynamicArrayTests DynamicArrayTests.cpp)
+target_link_libraries(DynamicArrayTests PRIVATE
+  CppFromScratch::CppFromScratch CppFromScratchWarnings
+  Catch2::Catch2WithMain)
+cppfs_stage_asan_runtime(DynamicArrayTests)
+
 include(Catch)
 catch_discover_tests(LinkedListTests DISCOVERY_MODE PRE_TEST)
 catch_discover_tests(StackTests DISCOVERY_MODE PRE_TEST)
 catch_discover_tests(QueueTests DISCOVERY_MODE PRE_TEST)
+catch_discover_tests(DynamicArrayTests DISCOVERY_MODE PRE_TEST)

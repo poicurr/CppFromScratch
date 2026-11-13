@@ -54,7 +54,7 @@ ctest --preset tsan
 - [x] `LinkedList<T>` — Doubly linked list
 - [x] `Stack<T>` — LIFO
 - [x] `Queue<T>` — FIFO
-- [ ] `DynamicArray<T>` — Growable array
+- [x] `DynamicArray<T>` — Growable array
 - [ ] `RingBuffer<T>` — Circular indexing
 - [ ] `UniquePtr<T>` — Exclusive ownership and RAII
 - [ ] `BinarySearchTree<T>` — Binary search tree
